@@ -1,0 +1,45 @@
+.hero{
+    background-image: url(assets/pull-ups.avif);
+}
+.clip{
+    position: absolute;
+    bottom:4px;
+    clip-path: polygon(0 100%, 100% 57%, 100% 100%, 0% 100%);
+    background-color: black;  
+    width: 100%;
+    height: 10rem;
+    left: 0;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: rgba(225,225,225,0.3);
+}
+
+.contactClip{
+    clip-path: polygon(100% 26%, 0% 100%, 100% 100%);
+    background-color: black;  
+    width: 100%;
+    height: 5rem;
+    left: 0;
+    /* border-bottom: 1px; */
+
+}
+
+.footerClip{
+    clip-path: polygon(100% 26%, 0% 100%, 100% 100%);
+    /* background-color: aqua; */
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+
+}
+@media screen and (max-width: 800px) {
+    .one,.two,.three{
+        visibility: hidden;
+    }
+    .four{
+        visibility: visible;
+    }
+}
